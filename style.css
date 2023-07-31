@@ -123,6 +123,12 @@ a {
   }
 }
 
+@media (max-width: 600px) {
+  .nav {
+    width: 80%;
+  }
+}
+
 .nav-active {
   transform: translateX(0%);
 }
@@ -156,9 +162,8 @@ a {
 /* section Inicio start */
 
 .home {
-  margin: 5vw 0;
-  height: 60vh;
-  position: relative;
+  padding: 5vw 0;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -220,23 +225,12 @@ button:hover {
   transform: .3s;
 }
 
-@media (max-width: 1120px) {
-  .home>img {
-    display: none;
-  }
-
-  .apresentation {
-    align-items: center;
-
-  }
-}
-
 /* section Inicio end */
 
 /* section Sobre mim start */
 
 .about {
-  margin-bottom: 128px;
+  margin: 148px 0;
 }
 
 .about h2 {
@@ -301,6 +295,15 @@ button:hover {
 }
 
 @media (max-width: 1120px) {
+  .home>img {
+    display: none;
+  }
+
+  .apresentation {
+    align-items: center;
+
+  }
+
   .container_about {
     flex-direction: column;
     align-items: center;
@@ -328,5 +331,8 @@ button:hover {
 
   .bio-contacts {
     margin: 24px auto 0 auto;
+    gap: 8px;
+    text-align: center;
+    flex-direction: column;
   }
 }

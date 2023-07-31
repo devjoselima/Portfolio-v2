@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=3, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -31,13 +32,23 @@
         <p>HELLO WORLD! EU SOU O JOSÉ👋</p>
         <h1>WEB DEVELOPER</h1>
         <div class="container-buttons">
-          <button><img src="assets/icon-github.svg" alt="icone github">Github</button>
-          <button><img src="assets/icon-linkedin.svg" alt="icone LinkedIn">LinkedIn</button>
+          <button>
+            <img src="assets/icon-github.svg" alt="icone github">
+            <a href="https://www.github.com/devjoselima" target="_blank">
+              Github
+            </a>
+          </button>
+          <button>
+            <img src="assets/icon-linkedin.svg" alt="icone LinkedIn">
+            <a href="https://www.linkedin.com/in/jose-limag/" target="_blank">
+              LinkedIn
+            </a>
+          </button>
         </div>
       </div>
       <img src="assets/hero.png" alt="">
     </section>
-    <section class="about">
+    <section class="about" data-aos="zoom-in">
       <h2>Sobre <span>mim</span></h2>
       <div class="container_about">
         <div class="container-profile-image">
@@ -65,7 +76,12 @@
     </section>
   </main>
 
-  <script src="scripts.js"></script>
+  <script src="navMobile.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- <script src="scroll.js"></script> -->
 </body>
 
 </html>
