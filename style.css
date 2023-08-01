@@ -218,6 +218,10 @@ a {
   margin-top: 4px;
 }
 
+.container-buttons img {
+  height: 18px;
+}
+
 button {
   display: flex;
   justify-content: center;
@@ -248,7 +252,7 @@ button:hover {
 /* section Sobre mim start */
 
 .about {
-  margin: 148px 0;
+  padding: 148px 0;
 }
 
 .title-section {
@@ -260,7 +264,6 @@ button:hover {
 
 .about span,
 .projects span,
-.skills span,
 .about h4 {
   color: #00A3FF;
 }
@@ -374,6 +377,12 @@ button:hover {
   column-gap: 32px;
 }
 
+.container-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .container-techs img {
   margin-bottom: 8px;
 }
@@ -390,11 +399,25 @@ button:hover {
 
 .name-skill {
   font-size: 22px;
+  color: #00A3FF;
+  border-left: 3px solid #00A3FF;
+  padding-left: 8px;
+  margin-bottom: 8px;
 }
 
 .content-skill {
   font-size: 15px;
+  color: #BFBEBE;
+  text-align: justify;
 }
+
+.level-skill {
+  margin-top: 32px;
+  font-size: 15px;
+  color: #BFBEBE;
+  border-bottom: 1px solid #BFBEBE;
+}
+
 
 /* section skills end  */
 
@@ -431,12 +454,8 @@ footer {
     align-items: center;
   }
 
-  .square {
-    display: none;
-  }
-
   .container_about img {
-    margin-bottom: 32px;
+    margin-bottom: 52px;
   }
 
   .container-bio p {
@@ -467,6 +486,10 @@ footer {
   .container-projects {
     grid-template-columns: 1fr;
     align-items: center;
+  }
+
+  .container-techs {
+    justify-content: center;
   }
 
   .project {
