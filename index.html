@@ -14,9 +14,9 @@
     <a href="#" class="logo">&lt;/&gt;</a>
 
     <nav class="nav">
-      <a href="">Inicio</a>
-      <a href="">Sobre mim</a>
-      <a href="">Projetos</a>
+      <a href="#hero">Inicio</a>
+      <a href="#about">Sobre mim</a>
+      <a href="#projects">Projetos</a>
       <a href="">Skills</a>
     </nav>
     <div class="burger">
@@ -27,28 +27,30 @@
   </header>
 
   <main>
-    <section class="home">
-      <div class="apresentation">
-        <p>HELLO WORLD! EU SOU O JOSÉ👋</p>
-        <h1>WEB DEVELOPER</h1>
-        <div class="container-buttons">
-          <button>
-            <img src="assets/icon-github.svg" alt="icone github">
-            <a href="https://www.github.com/devjoselima" target="_blank">
-              Github
-            </a>
-          </button>
-          <button>
-            <img src="assets/icon-linkedin.svg" alt="icone LinkedIn">
-            <a href="https://www.linkedin.com/in/jose-limag/" target="_blank">
-              LinkedIn
-            </a>
-          </button>
+    <section class="home hero" id="hero">
+      <div class="hero">
+        <div class="apresentation">
+          <p>HELLO WORLD! EU SOU O JOSÉ👋</p>
+          <h1 id="text"></h1>
+          <div class="container-buttons">
+            <button>
+              <img src="assets/icon-github.svg" alt="icone github">
+              <a href="https://www.github.com/devjoselima" target="_blank">
+                Github
+              </a>
+            </button>
+            <button>
+              <img src="assets/icon-linkedin.svg" alt="icone LinkedIn">
+              <a href="https://www.linkedin.com/in/jose-limag/" target="_blank">
+                LinkedIn
+              </a>
+            </button>
+          </div>
         </div>
+        <img src="assets/dev.png" alt="">
       </div>
-      <img src="assets/hero.png" alt="">
     </section>
-    <section class="about" data-aos="zoom-in">
+    <section class="about" id="about" data-aos="zoom-in" data-aos-duration="1000">
       <h2>Sobre <span>mim</span></h2>
       <div class="container_about">
         <div class="container-profile-image">
@@ -74,9 +76,32 @@
         </div>
       </div>
     </section>
+    <section class="projects" id="projects">
+      <div class="centralizer">
+        <h2 data-aos="zoom-in">Meus <span>projetos</span></h2>
+        <div class="container-projects">
+          <div class="project">
+            <a href="https://eplay-1-tan.vercel.app/">
+              <img src="assets/projeto-eplay.png" alt="" data-aos="fade-right" data-aos-duration="2000">
+            </a>
+            <p>Typescript, styled-components, react</p>
+            <h4 class="project-title">E-COMMERCE DE GAMES</h4>
+          </div>
+          <div class="project">
+            <a href="https://efood-rho.vercel.app/">
+              <img src="assets/projeto-efood.png" alt="" data-aos="fade-left" data-aos-duration="2000">
+            </a>
+            <p>Typescript, styled-components, react</p>
+            <h4 class="project-title">E-COMMERCE DE RESTAURANTES</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
   <script src="navMobile.js"></script>
+  <script src="typing.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

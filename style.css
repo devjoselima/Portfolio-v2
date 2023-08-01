@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+.centralizer {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* Header start */
 
 .header {
@@ -164,16 +170,24 @@ a {
 .home {
   padding: 5vw 0;
   height: 80vh;
-  display: flex;
-  align-items: center;
 }
 
-.apresentation {
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
   width: 100%;
+}
+
+
+.apresentation {
+  /* width: 100%;
   max-width: 1024px;
+  margin: 0 auto; */
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .apresentation p {
@@ -188,10 +202,14 @@ a {
   text-align: left;
 }
 
-.home>img {
-  height: 625px;
-  position: absolute;
-  right: -10px;
+.apresentation h1:after {
+  content: '|';
+  animation: blink 2s infinite;
+}
+
+.hero>img {
+  height: 425px;
+  animation: float 2.1s infinite;
 }
 
 .container-buttons {
@@ -233,7 +251,8 @@ button:hover {
   margin: 148px 0;
 }
 
-.about h2 {
+.about h2,
+.projects h2 {
   text-align: center;
   color: #fff;
   font-size: 40px;
@@ -241,6 +260,7 @@ button:hover {
 }
 
 .about span,
+.projects span,
 .about h4 {
   color: #00A3FF;
 }
@@ -294,14 +314,59 @@ button:hover {
   justify-content: space-between;
 }
 
+/* section Sobre end */
+
+/* section Projetos start */
+
+.projects {
+  padding-bottom: 100px;
+}
+
+.container-projects img {
+  height: 400px;
+}
+
+.container-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 150px;
+  justify-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project p {
+  color: #BFBEBE;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  color: #00A3FF;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+
+/* section Projetos end */
+
 @media (max-width: 1120px) {
-  .home>img {
+  .hero>img {
     display: none;
+  }
+
+  .hero {
+    justify-content: center;
   }
 
   .apresentation {
     align-items: center;
-
   }
 
   .container_about {
@@ -322,6 +387,18 @@ button:hover {
   }
 }
 
+@media (max-width: 968px) {
+  .container-projects {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .project {
+    align-items: center;
+    margin-bottom: 32px;
+  }
+}
+
 @media (max-width: 600px) {
 
   .bio-description,
@@ -334,5 +411,36 @@ button:hover {
     gap: 8px;
     text-align: center;
     flex-direction: column;
+  }
+
+}
+
+
+
+/* Animations */
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
