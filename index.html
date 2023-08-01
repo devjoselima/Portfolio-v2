@@ -17,7 +17,7 @@
       <a href="#hero">Inicio</a>
       <a href="#about">Sobre mim</a>
       <a href="#projects">Projetos</a>
-      <a href="">Skills</a>
+      <a href="#skills">Skills</a>
     </nav>
     <div class="burger">
       <div class="line1"></div>
@@ -51,7 +51,7 @@
       </div>
     </section>
     <section class="about" id="about" data-aos="zoom-in" data-aos-duration="1000">
-      <h2>Sobre <span>mim</span></h2>
+      <h2 class="title-section">Sobre <span>mim</span></h2>
       <div class="container_about">
         <div class="container-profile-image">
           <img src="assets/perfil.jpg" alt="jose lima profile">
@@ -78,7 +78,7 @@
     </section>
     <section class="projects" id="projects">
       <div class="centralizer">
-        <h2 data-aos="zoom-in">Meus <span>projetos</span></h2>
+        <h2 data-aos="zoom-in" class="title-section">Meus <span>projetos</span></h2>
         <div class="container-projects">
           <div class="project">
             <a href="https://eplay-1-tan.vercel.app/">
@@ -89,7 +89,7 @@
           </div>
           <div class="project">
             <a href="https://efood-rho.vercel.app/">
-              <img src="assets/projeto-efood.png" alt="" data-aos="fade-left" data-aos-duration="2000">
+              <img src="assets/projeto-efood.png" alt="" data-aos="fade-right" data-aos-duration="2000">
             </a>
             <p>Typescript, styled-components, react</p>
             <h4 class="project-title">E-COMMERCE DE RESTAURANTES</h4>
@@ -98,15 +98,38 @@
 
       </div>
     </section>
+    <section class="skills" id="skills">
+      <div class="centralizer">
+        <h2 class="title-section" data-aos="zoom-in">Minhas <span>skills</span></h2>
+        <h3 data-aos="zoom-in">Techs</h3>
+        <div class="container-techs-about">
+          <div class="container-techs " data-aos="zoom-in">
+            <img src="assets/img/icon-html.svg" alt="icone html" title="Html">
+            <img src="assets/img/icon-css.svg" alt="icone css" title="Css">
+            <img src="assets/img/icon-js.svg" alt="icone javascript" title="Javascript">
+            <img src="assets/img/icon-typescript.svg" alt="icone Typescript" title="typescript">
+            <img src="assets/img/icon-react.svg" alt="icone react" title="React">
+            <img src="assets/img/icon-redux.svg" alt="icone redux" title="Redux">
+            <img src="assets/img/icon-styled.svg" alt="icone styled-components" title="Styled-components">
+          </div>
+          <div class="about-techs">
+            <h4 class="name-skill"></h4>
+            <p class="content-skill"></p>
+            <span class="level-skill"></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
-  <script src="navMobile.js"></script>
-  <script src="typing.js"></script>
+  <script src="assets/js/navMobile.js"></script>
+  <script src="assets/js/typing.js"></script>
+  <script src="assets/js/skills.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <!-- <script src="scroll.js"></script> -->
 </body>
 
 </html>

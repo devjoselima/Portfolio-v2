@@ -251,8 +251,7 @@ button:hover {
   margin: 148px 0;
 }
 
-.about h2,
-.projects h2 {
+.title-section {
   text-align: center;
   color: #fff;
   font-size: 40px;
@@ -261,6 +260,7 @@ button:hover {
 
 .about span,
 .projects span,
+.skills span,
 .about h4 {
   color: #00A3FF;
 }
@@ -352,9 +352,53 @@ button:hover {
   text-align: center;
 }
 
-
-
 /* section Projetos end */
+
+/* section skills start */
+
+.skills {
+  margin-bottom: 64px;
+}
+
+.skills h3 {
+  font-size: 30px;
+  color: #fff;
+  border-bottom: 2px solid #00A3FF;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.container-techs-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+}
+
+.container-techs img {
+  margin-bottom: 8px;
+}
+
+.container-techs img:hover {
+  cursor: pointer;
+  transform: translate(0, -10px);
+  transition: 0.3s;
+}
+
+.about-techs {
+  color: #fff;
+}
+
+.name-skill {
+  font-size: 22px;
+}
+
+.content-skill {
+  font-size: 15px;
+}
+
+/* section skills end  */
+
+/* Media queries start */
 
 @media (max-width: 1120px) {
   .hero>img {
@@ -384,6 +428,25 @@ button:hover {
 
   .container-bio p {
     text-align: center;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .container-techs-about {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .container-techs {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .about-techs {
+    width: 80%;
+    text-align: left;
   }
 }
 
@@ -415,6 +478,7 @@ button:hover {
 
 }
 
+/* Media queries end */
 
 
 /* Animations */
