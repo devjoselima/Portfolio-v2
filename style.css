@@ -357,7 +357,7 @@ button:hover {
 /* section skills start */
 
 .skills {
-  margin-bottom: 64px;
+  margin-bottom: 80px;
 }
 
 .skills h3 {
@@ -397,6 +397,19 @@ button:hover {
 }
 
 /* section skills end  */
+
+/* footer start  */
+
+footer {
+  background-color: #151B26;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* footer end  */
 
 /* Media queries start */
 
