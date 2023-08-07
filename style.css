@@ -169,7 +169,7 @@ a {
 
 .home {
   padding: 5vw 0;
-  height: 80vh;
+  height: 90vh;
 }
 
 .hero {
@@ -183,9 +183,6 @@ a {
 
 
 .apresentation {
-  /* width: 100%;
-  max-width: 1024px;
-  margin: 0 auto; */
   display: flex;
   flex-direction: column;
 }
@@ -317,6 +314,10 @@ button:hover {
   justify-content: space-between;
 }
 
+.links-contacts:hover {
+  text-decoration: underline;
+}
+
 /* section Sobre end */
 
 /* section Projetos start */
@@ -327,6 +328,11 @@ button:hover {
 
 .container-projects img {
   height: 400px;
+}
+
+.container-projects a:hover {
+  transform: scale(103%);
+  transition: .3s;
 }
 
 .container-projects {

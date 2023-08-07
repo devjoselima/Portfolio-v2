@@ -26,8 +26,8 @@ const mySkills = [
   },
   {
     title: 'Jquery',
-    content: 'lorem',
-    level: 'Nível: avançado'
+    content: 'Ja trabalhei com jquery algumas vezes e é uma biblioteca muito boa, porém foram poucas vezes mas como ela é apenas uma biblioteca de js nunca tive dificuldade de usa-la.',
+    level: 'Nível: intermediário'
   },
   {
     title: 'Typescript',
@@ -51,12 +51,12 @@ const mySkills = [
   },
   {
     title: 'Git',
-    content: 'lorem',
+    content: 'O git é um sistema de controle  de versão fundamental para qualquer desenvolvedor, como dev estou familiarizado com esta ferramenta possuindo experiência na criação de branchs, commits semânticos e etc.',
     level: 'Nível: avançado'
   },
   {
     title: 'Github',
-    content: 'lorem',
+    content: 'O github é outra ferramenta super importante no dia de um dev, nela armazeno todos meus projetos e busco manter meu perfil sempre o mais ativo com novos commits',
     level: 'Nível: avançado'
   },
 ];
