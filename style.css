@@ -34,9 +34,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #151B26;
   z-index: 1;
-  background-color: #151B26;
+  transition: 2s;
+}
+
+.is-hidden {
+  display: none;
 }
 
 .logo {
@@ -114,7 +117,8 @@ a {
     right: 0;
     height: 92vh;
     top: 8vh;
-    background-color: #151B26;
+    background-color: #151920e1;
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
