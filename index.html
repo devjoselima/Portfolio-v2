@@ -27,6 +27,29 @@
   </header>
 
   <main>
+    <div class="modal">
+      <div class="modal-content">
+        <img src="assets/img/icons/icon-close.png" alt="X" class="close-button">
+
+        <img src="" alt="screenshot do projeto" class="modal-img-project">
+        <div class="modal-infos">
+          <h1 class="modal-title"></h1>
+          <p class="modal-text">.</p>
+        </div>
+        <div class="modal-buttons">
+          <a class="modal-button link-modal-button" target="_blank">
+            <img src="./assets/img/icons/link-icon.png" alt="icon clip">
+            Deploy
+          </a>
+          <a class="modal-button github-modal-button" target="_blank">
+            <img src="assets/img/icons/icon-github-white.svg" alt="icon github">
+            Github
+          </a>
+        </div>
+
+      </div>
+    </div>
+
     <section class="home hero" id="hero">
       <div class="hero">
         <div class="apresentation">
@@ -55,15 +78,16 @@
       <h2 class="title-section">Sobre <span>mim</span></h2>
       <div class="container_about">
         <div class="container-profile-image">
-          <img src="assets/perfil.jpg" alt="jose lima profile">
+          <img src="assets/img/perfil.jpg" alt="jose lima profile">
           <div class="square"></div>
         </div>
 
         <div class="container-bio">
           <p class="bio">Meu nome é <span>José Lima</span></p>
-          <p class="bio-description">Olá! Eu me chamo José, tenho 19 anos, amo jogar, assistir lives e estudar sobre
-            tecnologias novas. Meu primeiro contato com programação foi durante meu ensino medio tendo aulas de html e
-            css, atualmente, estudo a área de front end mas desejo me tornar um desenvolvedor full stack no futuro.</p>
+          <p class="bio-description">
+            Olá! Sou o José, 19 anos, um desenvolvedor front-end freelancer com experiência em desenvolvimento mobile híbrido, buscando minha primeira oportunidade como desenvolvedor junior. <br><br>
+            Desde pequeno sempre fui apaixonado por tecnologia e isso me levou a explorar diversas áreas, tecnologias e atualmente estou me aprofundando em back-end. Se você procura alguém motivado e pronto para aprender, saiba que sou a pessoa certa!
+          </p>  
           <div class="bio-contacts">
             <div>
               <h4>Currículo</h4>
@@ -84,21 +108,32 @@
         <h2 data-aos="zoom-in" class="title-section">Meus <span>projetos</span></h2>
         <div class="container-projects">
           <div class="project">
-            <a href="https://eplay-1-tan.vercel.app/">
-              <img src="assets/projeto-eplay.png" alt="" data-aos="fade-right" data-aos-duration="2000">
-            </a>
+            <div class="div-project-image">
+              <img 
+                src="assets/img/projeto-eplay.png" 
+                alt="imagem do projeto eplay" 
+                class="project-image"
+                data-aos="fade-right" 
+                data-aos-duration="2000" 
+              />
+            </div>
             <p>Typescript, styled-components, react</p>
             <h4 class="project-title">E-COMMERCE DE GAMES</h4>
           </div>
           <div class="project">
-            <a href="https://efood-rho.vercel.app/">
-              <img src="assets/projeto-efood.png" alt="" data-aos="fade-right" data-aos-duration="2000">
-            </a>
+            <div class="div-project-image">
+              <img 
+                src="assets/img/projeto-efood.png" 
+                alt="imagem do projeto efood" 
+                class="project-image"
+                data-aos="fade-right" 
+                data-aos-duration="2000"
+              />
+            </div>
             <p>Typescript, styled-components, react</p>
             <h4 class="project-title">E-COMMERCE DE RESTAURANTES</h4>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -158,6 +193,7 @@
 
   <script src="assets/js/navMobile.js"></script>
   <script src="assets/js/header.js"></script>
+  <script src="assets/js/modal.js"></script>
   <script src="assets/js/typing.js"></script>
   <script src="assets/js/skills.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

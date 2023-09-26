@@ -2,10 +2,6 @@ const header = document.querySelector('.header')
 
 const home = document.querySelector('.home')
 
-
-
-
-
 window.addEventListener('scroll', () => {
   const currentPosition = window.scrollY;
 
@@ -15,7 +11,5 @@ window.addEventListener('scroll', () => {
     header.classList.remove('is-hidden')
 
   }
-
-  console.log(currentPosition)
 })
 

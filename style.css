@@ -117,8 +117,8 @@ a {
     right: 0;
     height: 92vh;
     top: 8vh;
-    background-color: #151920e1;
-    backdrop-filter: blur(10px);
+    background: linear-gradient(to top, #1B4F72, #0D121C);
+    opacity: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -332,9 +332,10 @@ button:hover {
 
 .container-projects img {
   height: 400px;
+  cursor: pointer;
 }
 
-.container-projects a:hover {
+.container-projects .div-project-image:hover {
   transform: scale(103%);
   transition: .3s;
 }
@@ -443,6 +444,99 @@ footer {
 }
 
 /* footer end  */
+
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity .25s, transform 0.25s ;
+}
+
+.modal-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  background: linear-gradient(to top right, #1B4F72, #0D121C);
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0.5%;
+  max-width: 44px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modal-img-project {
+  width: 100%; 
+  height: auto; 
+  max-height: 267px;
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-buttons  {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.modal-button {
+  background-color: transparent;
+  color: #fff;
+
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.modal-button img {
+  width: 22px;
+  color: #fff;
+}
+
+.modal-button:hover {
+  background-color: hsl(210, 90%, 50%);
+  transform: translateY(-3px);
+}
+
 
 /* Media queries start */
 
