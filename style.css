@@ -317,7 +317,7 @@ a {
 .container_about img {
   height: 258px;
   border-radius: 5px;
-  filter: drop-shadow(5px 10px 10px #00a2ff1c);
+  filter: drop-shadow(10px 10px 15px #00a2ff1c);
 }
 
 
