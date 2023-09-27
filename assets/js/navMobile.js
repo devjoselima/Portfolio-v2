@@ -3,6 +3,19 @@ const navSlide = () => {
   const nav = document.querySelector('.nav');
   const navLinks = document.querySelectorAll('.nav a');
 
+  const closeNav = () => {
+    nav.classList.remove('nav-active')
+    burguer.classList.remove('toggle')
+  };
+
+  navLinks.forEach((link) => {
+    link.style.opacity = '1';
+    link.addEventListener('click', () => {
+      burger.classList.toggle('toggle');
+      closeNav()
+    });
+  })
+
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
     
