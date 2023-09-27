@@ -4,8 +4,8 @@ let projectImage = document.querySelectorAll('.project-image');
 let modalTitle = document.querySelector('.modal-title');
 let modalDescription = document.querySelector('.modal-text');
 let modalImage = document.querySelector('.modal-img-project');
-let linkButton = document.querySelector('.link-modal-button'); 
-let githubButton = document.querySelector('.github-modal-button');
+let linkButton = document.querySelector('#deploy-modal-button'); 
+let githubButton = document.querySelector('#github-modal-button');
 
 const projects = [
   {

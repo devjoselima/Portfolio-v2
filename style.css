@@ -224,16 +224,16 @@ a {
   margin-top: 24px;
 }
 
-.github-button {
+.github-button{
   background-color: #181717;
 }
 
-.linkedin-button {
+.linkedin-button,
+.deploy-button {
   background-color: #1C92FF;
-  color: #ffff;
 }
 
-.button-home {
+.button{
   display: flex;
   align-items: center;
   gap: 12px;
@@ -248,9 +248,10 @@ a {
   font-weight: medium;
 }
 
-.button-home:hover {
+.button:hover {
   background-color: #fff;
   transition: .6s;
+  transform: translateY(-3px);
 }
 
 .github-button svg path,
@@ -535,36 +536,8 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
-
+  height: 43px;
   margin-top: 50px;
-}
-
-.modal-button {
-  background-color: transparent;
-  color: #fff;
-
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-
-  border: 1px solid rgba(255, 255, 255, 0.2);;
-  border-radius: 5px;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-.modal-button img {
-  width: 22px;
-  color: #fff;
-}
-
-.modal-button:hover {
-  background-color: hsl(210, 90%, 50%);
-  transform: translateY(-3px);
 }
 
 
@@ -647,7 +620,6 @@ footer {
     margin: 24px auto 0 auto;
     gap: 8px;
     text-align: center;
-    flex-direction: column;
   }
 
 }
