@@ -25,7 +25,6 @@ const projects = [
 ]
 
 const openModal = () => {
-  // modal.style.display = 'flex';
   modal.classList.add('modal-visible')
 }
 
@@ -56,6 +55,6 @@ projectImage.forEach((project, index) => {
   })
 })
 
-closeButton.addEventListener('click', () => {
-  closeModal()
-})
+closeButton.addEventListener('click', closeModal)
+
+modal.addEventListener('click', closeModal)

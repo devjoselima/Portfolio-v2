@@ -351,10 +351,12 @@ a {
 
 .links-contacts a {
   font-size: 14px;
+  color: #868c96;
+  transition: .5s;
 }
 
 .links-contacts a:hover {
-  text-decoration: underline;
+  color: #fff;
 }
 
 /* section Sobre end */
@@ -517,6 +519,7 @@ footer {
   max-width: 44px;
   z-index: 1;
   cursor: pointer;
+  color: #fff;
 }
 
 .modal-img-project {
