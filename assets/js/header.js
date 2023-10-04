@@ -1,8 +1,5 @@
-const header = document.querySelector('.header')
-
-const home = document.querySelector('.home')
-
-window.addEventListener('scroll', () => {
+function hideHeader() {
+  const header = document.querySelector('.header');
   const currentPosition = window.scrollY;
 
   if (currentPosition < 20) {
@@ -11,5 +8,9 @@ window.addEventListener('scroll', () => {
     header.classList.remove('is-hidden')
 
   }
-})
+
+}
+
+window.addEventListener('scroll', hideHeader)
+
 
